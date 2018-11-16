@@ -1,0 +1,1 @@
+ALTER TABLE `#__seminarman_tutor` MODIFY `description` mediumtext;

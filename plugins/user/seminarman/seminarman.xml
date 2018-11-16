@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD plugin 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/plugin-install.dtd">
+<extension version="1.6" type="plugin" group="user">
+	<name>plg_user_seminarman</name>
+	<creationDate>November 2011</creationDate>
+	<author>Open Source Group GmbH</author>
+	<authorEmail>info@osg-gmbh.de</authorEmail>
+	<authorUrl>http://www.osg-gmbh.de</authorUrl>
+	<copyright>(C) 2011 Open Source Group GmbH</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0.6</version>
+	<description>This is a companion plugin of com_seminarman. It cleans up some database tables when users are deleted.</description>
+	<files>
+		<filename plugin="seminarman">seminarman.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_user_seminarman.sys.ini</language>
+		<language tag="de-DE">de-DE.plg_user_seminarman.sys.ini</language>
+	</languages>
+</extension>

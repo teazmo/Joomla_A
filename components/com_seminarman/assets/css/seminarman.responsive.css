@@ -1,0 +1,186 @@
+/* responsive */
+@media only screen and (max-width: 767px) {
+/* Force table to not be like tables anymore */
+div#seminarman table.seminarmancoursetable,
+div#seminarman table.seminarmancoursetable thead,
+div#seminarman table.seminarmancoursetable tbody,
+div#seminarman table.seminarmancoursetable th,
+div#seminarman table.seminarmancoursetable td,
+div#seminarman table.seminarmancoursetable tr {
+display: block;
+}
+ 
+/* Hide table headers (but not display: none;, for accessibility) */
+div#seminarman table.seminarmancoursetable thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+ 
+div#seminarman table.seminarmancoursetable tr { border: 1px solid #ccc; }
+ 
+div#seminarman table.seminarmancoursetable td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #eee;
+position: relative;
+padding-left: 50%;
+white-space: normal;
+text-align:left;
+
+min-height: 1em;
+overflow: hidden;
+}
+
+div#seminarman table.seminarmancoursetable td.res_full {
+padding-left: 0;	
+}
+ 
+div#seminarman table.seminarmancoursetable td:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+text-align:left;
+font-weight: bold;
+}
+ 
+/*
+Label the data
+*/
+div#seminarman table.seminarmancoursetable td:before { content: attr(data-title); }
+
+div#seminarman dd div#qf_filter div.qf_fleft label:before, div#seminarman div#qf_filter div.qf_fleft label:before {
+  content: '\A';
+  white-space: pre;
+}
+
+div#seminarman dd div#qf_filter div.qf_fright, div#seminarman div#qf_filter div.qf_fright {
+  clear: left;
+  float: left;	
+}
+
+/* Course Detail */
+
+div#seminarman dt{
+min-width: 48%;
+}
+
+div#seminarman div.course_details div {
+float: none;
+width: auto;
+}
+
+div#seminarman div.course_details dl.course_info_left
+div#seminarman div.course_details dl.course_info_right {
+display: block;
+}
+	
+div#seminarman div.course_details dl.course_info_right {
+position: relative;
+clear: none;
+float: none;
+}
+	
+/* Application Form */
+	
+div#seminarman div.course_applicationform thead,
+div#seminarman div.course_applicationform tbody,
+div#seminarman div.course_applicationform th,
+div#seminarman div.course_applicationform td,
+div#seminarman div.course_applicationform tr,
+div#seminarman div.course_applicationform td label.lblradio-block {
+display: block;
+}
+
+div#seminarman div#course_appform form#login-form {
+width: auto;
+}
+
+div#seminarman div.course_applicationform td .inputbox {
+width: 100%;
+}
+
+/* Shopping Cart */
+
+div#seminarman table.seminarman_cart_invoice,
+div#seminarman table.seminarman_cart_invoice thead,
+div#seminarman table.seminarman_cart_invoice tbody,
+div#seminarman table.seminarman_cart_invoice th,
+div#seminarman table.seminarman_cart_invoice td,
+div#seminarman table.seminarman_cart_invoice tr {
+display: block;
+}
+
+div#seminarman table.seminarman_cart_invoice thead tr,
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_netto_total_title,
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_discount_total_title,
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_withoutVat_total_title,
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_booking_total_title,
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_payment_total_title,
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_payment_fee_title {
+position: absolute;
+display: none;
+top: -9999px;
+left: -9999px;
+}
+
+div#seminarman table.seminarman_cart_invoice tr.seminarman_cart_item {
+border-top: 1px solid #ccc;
+border-width: 1px 0;
+}
+
+div#seminarman table.seminarman_cart tbody td {
+width: 50%;
+}
+
+div#seminarman table.seminarman_cart_invoice tbody td {
+border: none;
+position: relative;
+padding-left: 50%;
+width: auto;
+white-space: normal;
+text-align: left;
+overflow: hidden;
+}
+
+div#seminarman table.seminarman_cart_invoice tbody td.seminarman_cart_total {
+padding-left: 0;
+border-top: 2px solid #ddd;
+}
+
+div#seminarman table.seminarman_cart_invoice tbody td:before {
+position: absolute;
+top: 3px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+text-align:left;
+}
+
+div#seminarman table.seminarman_cart_invoice tbody td:before {
+content: attr(data-title);
+}
+
+div#seminarman table.seminarman_cart_invoice tbody td:after {
+content: attr(data-currency);
+}
+
+div#seminarman div#course_appform fieldset.radio input[type="radio"], div#seminarman div#course_appform fieldset.checkbox input[type="checkbox"] {
+    margin-left: 0;
+}
+
+div#seminarman div#course_appform .ccontentTable td.paramlist_key {
+    width: auto;
+}
+
+div#seminarman div#course_appform label {
+    width: auto;	
+}
+
+}

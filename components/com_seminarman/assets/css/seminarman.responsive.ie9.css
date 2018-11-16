@@ -1,0 +1,3 @@
+div#seminarman div.seminarmancoursepan, div#seminarman div.seminarmantemplatepan {
+  overflow: auto;	
+}

@@ -1,0 +1,6 @@
+/** additional css for tutor user **/
+
+ul li a.menu-icon-16-templates, ul li a.menu-icon-16-categories, ul li a.menu-icon-16-inter, ul li a.menu-icon-16-tags, 
+ul li a.menu-icon-16-user, ul li a.menu-icon-16-config {
+    display: none;
+}

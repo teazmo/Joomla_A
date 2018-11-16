@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.1" method="upgrade" client="site">
+  <name>mod_articles_random</name>
+  <files>
+    <filename module="mod_articles_random">mod_articles_random.php</filename>
+    <filename>helper.php</filename>
+    <folder>tmpl</folder>
+  </files>
+  <config>
+    <fields name="params">
+        <fieldset name="basic">
+          <field name="text" type="text" label="Text" description="Text steht hier"/>
+        </fieldset>
+    </fields>
+  </config>
+</extension>

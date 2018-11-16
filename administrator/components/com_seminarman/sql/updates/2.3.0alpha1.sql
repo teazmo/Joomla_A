@@ -1,0 +1,1 @@
+ALTER TABLE `#__seminarman_tutor` ADD `email` varchar(100) NOT NULL DEFAULT '' AFTER `fax_number`;

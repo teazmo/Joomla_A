@@ -1,0 +1,2 @@
+ALTER TABLE `#__seminarman_application` ADD `extra_attach_file` varchar(255) NOT NULL DEFAULT '' AFTER `certificate_file`;
+ALTER TABLE `#__seminarman_courses` ADD `extra_attach_template` int(11) unsigned NOT NULL DEFAULT '0' AFTER `certificate_template`;

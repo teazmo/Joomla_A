@@ -1,0 +1,1 @@
+ALTER TABLE `#__seminarman_courses` MODIFY `tutor_id` varchar(5120) DEFAULT NULL;

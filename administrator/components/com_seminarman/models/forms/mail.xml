@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: mail.xml 21546 2011-06-15 23:13:47Z chdemko $ -->
+<form>
+	<fieldset>
+
+		<field name="mode" type="checkbox"
+			description="COM_SEMINARMAN_MAIL_FIELD_SEND_IN_HTML_MODE_DESC"
+			label="COM_SEMINARMAN_SEND_AS_HTML"
+			value="1"
+		/>
+
+		<field name="receipt" type="listbox"
+			default="0"
+			description="COM_SEMINARMAN_MAIL_FIELD_GROUP_DESC"
+			label="COM_SEMINARMAN_LIST_RECIPIENTS"
+			size="10"
+		>
+			<option value="0">COM_USERS_MAIL_FIELD_VALUE_ALL_USERS_GROUPS</option>
+		</field>
+
+		<field name="bcc" type="checkbox"
+			default="0"
+			description="COM_SEMINARMAN_MAIL_FIELD_SEND_AS_BLIND_CARBON_COPY_DESC"
+			label="COM_SEMINARMAN_SEND_BCC"
+			value="1"
+		/>
+
+		<field name="cc" type="text"
+			class="inputbox"
+			description="COM_SEMINARMAN_MAIL_FIELD_CC_DESC"
+			label="COM_SEMINARMAN_SEND_CC"
+			maxlength="150"
+			size="30"
+		/>
+        
+        <field name="invoice" type="checkbox"
+            default="0"
+            description="COM_SEMINARMAN_MAIL_WITH_INVOICE_DESC"
+            label="COM_SEMINARMAN_WITH_INVOICE"
+            value="1"
+        />
+
+        <field name="certificate" type="checkbox"
+            default="0"
+            description="COM_SEMINARMAN_MAIL_WITH_CERTIFICATE_DESC"
+            label="COM_SEMINARMAN_WITH_CERTIFICATE"
+            value="1"
+        />
+        
+        <field name="ics" type="checkbox"
+            default="0"
+            description="COM_SEMINARMAN_WITH_ICS_DESC"
+            label="COM_SEMINARMAN_WITH_ICS"
+            value="1"
+        />
+        
+        <field name="addattach" type="checkbox"
+            default="0"
+            description="COM_SEMINARMAN_WITH_ADDATTACH_DESC"
+            label="COM_SEMINARMAN_WITH_ADDATTACH"
+            value="1"
+        />
+        
+        <field name="course_docs" type="checkbox"
+            default="0"
+            description="COM_SEMINARMAN_WITH_COURSE_DOCS_DESC"
+            label="COM_SEMINARMAN_WITH_COURSE_DOCS"
+            value="1"
+        />
+
+        <field name="email_template" type="listbox"
+            default="0"
+            description="COM_SEMINARMAN_MAIL_TEMPLATE_DESC"
+            label="COM_SEMINARMAN_EMAIL_TEMPLATE"
+            size="30"
+        />
+
+		<field name="subject" type="text"
+			class="inputbox"
+			description="COM_SEMINARMAN_MAIL_FIELD_SUBJECT_DESC"
+			label="COM_SEMINARMAN_MAIL_SUBJECT"
+			maxlength="150"
+			size="85"
+		/>
+
+		<field name="message" type="textarea"
+			class="inputbox"
+			cols="70"
+			description="COM_SEMINARMAN_MAIL_FIELD_MESSAGE_DESC"
+			label="COM_SEMINARMAN_MAIL_BODY"
+			rows="20"
+		/>
+	</fieldset>
+</form>

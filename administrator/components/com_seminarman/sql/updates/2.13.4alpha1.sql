@@ -1,0 +1,1 @@
+ALTER TABLE `#__seminarman_categories` ADD `params` text NOT NULL AFTER `ordering`;

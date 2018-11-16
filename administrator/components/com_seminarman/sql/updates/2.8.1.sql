@@ -1,0 +1,1 @@
+ALTER TABLE `#__seminarman_sessions` MODIFY `duration` varchar(250) NOT NULL;

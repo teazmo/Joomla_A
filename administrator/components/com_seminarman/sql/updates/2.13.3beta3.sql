@@ -1,0 +1,1 @@
+ALTER TABLE `#__seminarman_files_course_relations` ADD `email_attach` tinyint(1) NOT NULL DEFAULT '0' AFTER `ordering`;
